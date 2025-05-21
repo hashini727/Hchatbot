@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini AI චැට්බොට්</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="logo">
+                <i class="fas fa-robot"></i>
+                <span>Gemini AI සහායක</span>
+            </div>
+            <button id="clear-chat" class="btn-clear">
+                <i class="fas fa-trash-alt"></i> චැට් මකන්න
+            </button>
+        </div>
+        
+        <div class="chat-messages" id="chat-messages">
+            <div class="welcome-message">
+                <p>ආයුබෝවන්! මම ඔබේ Gemini AI සහායකය. අද මට ඔබට කෙසේ සහය විය හැකිද?</p>
+            </div>
+        </div>
+        
+        <div class="chat-input">
+            <textarea id="user-input" placeholder="ඔබගේ පණිවුඩය මෙහි ටයිප් කරන්න..." rows="1"></textarea>
+            <button id="send-button" class="btn-send">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+        
+        <div class="typing-indicator" id="typing-indicator">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
